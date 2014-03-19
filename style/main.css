@@ -2,14 +2,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #000;
-/*  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;*/
-  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif;
+/*  background: #fff;*/
+  background: #7F6A00;
+  color: #ffffff;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+/*  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif;*/
   font-size: 18px; 
-  -webkit-animation: background-gradient-change linear 6s infinite alternate;
-  -moz-animation: background-gradient-change linear 6s infinite alternate;
-  -moz-animation: background-gradient-change linear 6s infinite alternate; }
+/*  -webkit-animation: background-gradient-change linear 6s infinite alternate;*/
+/*  -moz-animation: background-gradient-change linear 6s infinite alternate;*/
+/*  -moz-animation: background-gradient-change linear 6s infinite alternate;*/ }
 
 body {
   margin: 80px 0; }
@@ -20,7 +21,7 @@ body {
   clear: both; }
 
 h1.title {
-  color:#333;
+  color:#CECA63;
   font-size: 48px;
   font-weight: bold;
   margin: 0;
@@ -103,53 +104,13 @@ h1.title {
     100% {
       opacity: 0; } }
       
-  @-webkit-keyframes hover-change {
-      0%   {color: cyan;}
-      25%  {color: magenta;}
-      50%  {color: yellow;}
-      100% {color: white;} }
-
-  @-moz-keyframes hover-change {
-      0%   {color: cyan;}
-      25%  {color: magenta;}
-      50%  {color: yellow;}
-      100% {color: white;} }
-      
-  @keyframes hover-change {
-      0%   {color: cyan;}
-      25%  {color: magenta;}
-      50%  {color: yellow;}
-      100% {color: white;} }
-      
-  @-webkit-keyframes background-gradient-change {
-      0%   {background: #cff;}
-      33%  {background: #fcf;}
-      66%  {background: #ffc;}
-      100%   {background: #cff;}}
-
-  @-moz-keyframes background-gradient-change {
-      0%   {background: #dff;}
-      33%  {background: #fdf;}
-      66%  {background: #ffd;}
-      100%   {background: #dff;}}
-      
-  @keyframes background-gradient-change {
-      0%   {background: #dff;}
-      33%  {background: #fdf;}
-      66%  {background: #ffd;}
-      100%   {background: #dff;}}      
-      
-  a:hover {
-         -webkit-animation: hover-change linear 0.1s infinite;
-         -moz-animation: hover-change linear 0.1s infinite;
-         animation: hover-change linear 0.1s infinite;
-       }      
-
+  
 .scores-container {
   float: right;
   text-align: right; }
   
-.game-container .doge-says {
+.game-container
+  .doge-says {
   position: fixed;
   top: 0;
   left: 0;
@@ -176,14 +137,14 @@ h1.title {
     top:30px;}
   .info-container, .hide-info {
     display: inline-block;
-    background: #f0f;
+    background: #CECA63;
     padding: 10px 15px;
     height: 10px;
     line-height: 10px;
     font-size:10px;
     font-weight: bold;
     border-radius: 3px;
-    color: white;
+    color: black;
     margin-top: 8px;
     text-align: center; }
       .info-container a, .hide-info a{
@@ -199,6 +160,7 @@ h1.title {
     bottom: 0;
     left: 0;
     background: rgba(255,255,255,0.9);
+    color: #000000;
     z-index: 100;
     border-radius: 6px;
     text-align: center;
@@ -217,14 +179,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #f0f;
+  background: #CECA63;
   padding: 15px 25px;
 /*  font-size: 25px;*/
   height: 25px;
   line-height: 42px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: #21007F;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -263,7 +225,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #f0f;
+  color: #7F3300;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -345,7 +307,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #f0f;
+      background: #7F3300;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -549,7 +511,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
 
-    background: #f0f url('../img/212/doge-derp-212.gif');
+    background: #f0f url('../img/212/doge-zzz-212.gif');
     background-size: cover;    
     font-size: 30px; }
     @media screen and (max-width: 480px) {
@@ -916,13 +878,14 @@ hr {
           font-size: 15px; } }
     .tile.tile-super .tile-inner {
 
-      background: #f0f url('../img/114/doge-derp-114.gif');
+      background: #f0f url('../img/114/doge-zzz-114.gif');
       background-size: cover;    
       font-size: 30px; }
       @media screen and (max-width: 480px) {
         .tile.tile-super .tile-inner {
           font-size: 10px; } }
 
+      
 
 
     #twitter-widget-0 {

@@ -1,4 +1,4 @@
-function HTMLActuator() {
+﻿function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -8,9 +8,6 @@ function HTMLActuator() {
 
   this.score = 0;
 }
-
-dogeSayings = ['remek', 'szuper', 'politika!', 'fidesz', 'szavazz rám', 'még', 'még még', 'még még még', 'kövér?', 'bizalom', 'hatalom' ,'pénz',
-'toljad!', 'szép!',]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
@@ -110,7 +107,6 @@ HTMLActuator.prototype.positionClass = function (position) {
 
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
-  this.clearContainer(this.dogeSays)
 
   var difference = score - this.score;
   this.score = score;
@@ -122,16 +118,6 @@ HTMLActuator.prototype.updateScore = function (score) {
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
     this.scoreContainer.appendChild(addition);
-    
-    var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)]
-    var messageElement = document.createElement("p");
-    messageElement.textContent = message
-    var left = 'left:' + Math.round(Math.random() * 80) + '%;'
-    var top = 'top:' + Math.round(Math.random() * 80) + '%;'
-    var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
-    var styleString = left + top + color
-    messageElement.setAttribute('style', styleString);
-    this.dogeSays.appendChild(messageElement);
     
   }
 };
